@@ -1,0 +1,28 @@
+/**
+ * 
+ * @author Julia Hu
+ * Name and Number
+ *
+ */
+import java.util.Scanner;
+public class TelephoneNumber 
+{
+	public static void main (String []args)
+	{
+		Scanner in = new Scanner(System.in);
+		
+		System.out.print("Enter your first name and then your phone number, with a space in between the two: ");
+		//input should be in format: Name xxxxxxxxxx
+		
+		String name = in.next();
+		String number = in.next();
+		in.nextLine();
+		
+		//using substrings to edit phone number into format: (xxx) xxx-xxxx
+		number = "(" + number.substring(0,3) + ") " + number.substring(3,6) + "-" + number.substring(6);
+		
+		System.out.printf("%-20s", name);
+		System.out.print(number);
+	}
+}
+
