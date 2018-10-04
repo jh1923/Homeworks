@@ -1,0 +1,54 @@
+/**
+ * 
+ * @author Julia Hu
+ * BankAccount
+ *
+ */
+public class BankAccount 
+{
+	//fields
+	private String name;
+	private String accNum;
+	private double balance;
+	
+	//constructor: takes two parameters to initialize name and account number
+	//and initializes balance to 0
+	public BankAccount(String yourName, String yourAccNum)
+	{
+		name = yourName;
+		accNum = yourAccNum;
+		balance = 0;
+	}
+	
+	//constructor: takes three parameters to initialize all three fields
+	public BankAccount(String yourName, String yourAccNum, double startBalance)
+	{
+		name = yourName;
+		accNum = yourAccNum;
+		balance = startBalance;
+	}
+	
+	//method: deposit
+	public void deposit(double deposit)
+	{
+		balance += deposit;
+	}
+	
+	//method: withdraw
+	public void withdraw(double withdrawl)
+	{
+		balance -= withdrawl;
+	}
+	
+	//method: get balance
+	public double getBalance()
+	{
+		return balance;
+	}
+	
+	//method: toString
+	public String toString()
+	{
+		return "Account number:\n" + accNum + "Name:\n" + name + "Balance:\n" + balance;		 
+	}
+}
