@@ -1,0 +1,19 @@
+/**
+ * 
+ * @author julia hu
+ * Smiley Face
+ *
+ */
+
+public class SmileyFace
+{
+	public static void main(String[] args) 
+	{
+		System.out.print("\\\\\\\\\\\\\\\\\\\n"
+				+ "|       |\n"
+				+ "| *   * |\n"
+				+ "|   *   |\n"
+				+ "|  \\_/  |\n"
+				+ " \\_____/ \n");
+	}
+}
