@@ -1,11 +1,11 @@
 /**
  * 
  * @author Julia Hu
- * Name and Number
+ * Name and Phone
  *
  */
 import java.util.Scanner;
-public class TelephoneNumber 
+public class NameAndPhone
 {
 	public static void main (String []args)
 	{
