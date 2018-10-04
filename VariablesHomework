@@ -1,0 +1,32 @@
+/**
+ * 
+ * @author Julia Hu
+ * Variables Homework
+ *
+ */
+public class VariablesHomework 
+{
+	public static void main(String[] args) 
+	{
+	//Write a program which will display a person’s name
+		String name = "Julia";
+		System.out.println(name);
+		
+	//Write a program which will calculate the area of a rectangle
+		int length = 2;
+		int width = 3;
+		
+		int areaRectangle = length*width;
+		System.out.println(areaRectangle);
+		
+	//Write a program which will calculate the area and circumference of a circle 
+		double radius = 10;
+		double pi = 3.14;
+		
+		double areaCircle = pi*radius*radius;
+		System.out.println(areaCircle);
+		
+		double circumference = 2*pi*radius;
+		System.out.println(circumference);
+	}
+}
