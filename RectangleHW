@@ -1,0 +1,45 @@
+/**
+ * 
+ * @author Julia Hu
+ * Rectangle Homework
+ *
+ */
+
+/*
+ * Instructions:
+	Write a short program (Main method only) which will input
+	the length of the side lengths of a rectangle, and will print
+	the area, perimeter, and diagonal length each on their own
+	line. Make sure that each value is rounded to 2 decimal
+	places if necessary, and that all values are aligned vertically.
+	Use the Pythagorean theorem for the diagonals.
+ */
+
+import java.util.Scanner;
+import java.lang.Math;
+public class RectangleHW 
+{
+	public static void main(String[] args) 
+	{
+		//creating a new Scanner object
+		Scanner in = new Scanner(System.in);
+		
+		//length
+		System.out.print("Enter the length of the rectangle: ");
+		double length = in.nextDouble();
+		in.nextLine();
+		
+		//width
+		System.out.print("Enter the width of the rectangle:  ");
+		double width = in.nextDouble();
+		in.nextLine();
+		
+		//area
+		System.out.printf("Area:%25.2f", (length*width));
+		
+		//perimeter
+		System.out.printf("\nPerimeter:%20.2f", (2*length + 2*width));
+		
+		//diagonal
+		System.out.printf("\nDiagonal:%21.2f", (Math.sqrt(Math.pow(length, 2) + Math.pow(width, 2))));
+	}
